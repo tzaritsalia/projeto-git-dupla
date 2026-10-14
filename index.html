@@ -3,17 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nome da Disciplina</title>
+    <title>Desenvolvimento Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Nome da Disciplina</h1>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">Nosso Site</a>
 
-    <p>
-        Esta disciplina aborda conceitos fundamentais relacionados ao
-        desenvolvimento de sistemas, programação e tecnologias web.
-    </p>
-	<button onclick="mostrarMensagem()">Clique aqui</button>
+            <div class="menu">
+                <a href="index.html">Início</a>
+                <a href="lia.html">Lia</a>
+                <a href="gustavo.html">Gustavo</a>
+            </div>
 
-<script src="script.js"></script>
+            <button id="temaBtn" type="button">
+                🌙 Tema escuro
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <span class="etiqueta">Projeto acadêmico</span>
+            <h1>Desenvolvimento Web</h1>
+
+            <p>
+                Esta disciplina aborda conceitos fundamentais relacionados
+                ao desenvolvimento de sistemas, programação e tecnologias web.
+            </p>
+
+            <button type="button" onclick="mostrarMensagem()">
+                Conheça nosso projeto
+            </button>
+
+            <p id="mensagem" aria-live="polite"></p>
+        </section>
+
+        <section class="integrantes">
+            <h2>Conheça nossa equipe</h2>
+            <p>Confira as páginas pessoais dos integrantes.</p>
+
+            <div class="cards">
+                <article class="card">
+                    <div class="avatar">L</div>
+                    <h3>Lia</h3>
+                    <p>Conheça a página pessoal da Lia.</p>
+                    <a class="link-card" href="lia.html">
+                        Ver perfil →
+                    </a>
+                </article>
+
+                <article class="card">
+                    <div class="avatar">G</div>
+                    <h3>Gustavo</h3>
+                    <p>Conheça a página pessoal do Gustavo.</p>
+                    <a class="link-card" href="gustavo.html">
+                        Ver perfil →
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto acadêmico de Desenvolvimento Web</p>
+        <p>Integrantes: Lia e Gustavo</p>
+    </footer>
 </body>
 </html>
